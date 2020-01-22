@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProByte</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class="w3-container">
+    <nav class="navbar sticky-top  navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html"> ProByte</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link " data-toggle="nav-pills" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="nav-pills" href="managerlogin.html">Manager Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="nav-pills" href="employeelogin.html">Employee Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="nav-pills" href="signup.html">Sign Up</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <header id="homepage" class="jumbotron">
+        <div class="container ">
+            <div class="row">
+                <div class="header-color col-sm-6 ">
+                    <h1>
+                        Probyte
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="align-top col-md-4 mx-auto bg-mod border border-primary">
+
+                    <form id="form" class="px-4 py-3" action="http://localhost:8080/projectone/signup" method="POST">
+                        <h2 class="col-sm-6 mx-auto text-capitalize">Sign Up</h2>
+                        <div class="dropdown-divider"></div>
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input id="f-Name" autocomplete="off" name="firstname" type="text" class="form-control"
+                                placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input id="l-Name" autocomplete="off" name="lastname" type="text" class="form-control"
+                                placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input id="email" autocomplete="off" name="email" type="email" class="form-control"
+                                placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input id="password" autocomplete="off" name="password" type="password" class="form-control"
+                                placeholder="Password">
+                        </div>
+                        <br>
+                        <select id="position" name="position" class="form-group">
+                            <option>Account Type</option>
+                            <option value="Manager">Manager Account</option>
+                            <option value="Employee">Employee Account</option>
+                        </select>
+                        <div class="dropdown-divider"></div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </body>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <p>
+                        show the magic
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="dom.js"></script>
+
+</html>

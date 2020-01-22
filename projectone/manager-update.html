@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ProByte</title>
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class=" hpage w3-container">
+    <nav class="navbar sticky-top  navbar-expand-md bg-mod navbar-dark">
+        <a class="navbar-brand" href="manager-hpage.html"> ProByte</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active " data-toggle="nav-pills" href="manager-hpage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="nav-pills" href="manager-work.html">Check Employee Reimbursement </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="nav-pills" href="manager-rform.html">Reimbursement Requests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " data-toggle="nav-pills" href="manager-update.html">Update Acount</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-toggle="nav-pills" href="index.html">Logout</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    <header id="homepage" class="jumbotron">
+        <div class="container ">
+            <div class="row">
+                <div class="header-color col-sm-3 ">
+                    <h1>
+                        <a>Probyte</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 float-left text-sm-left bg-home px-4 py-3">
+                <span>
+                    <h5>FirstName: </h5> <a id="f-Name"></a>
+                </span><br><br>
+                <span>
+                    <h5>LastName: </h5> <a id="l-Name"></a>
+                </span><br><br>
+                <span>
+                    <h5>Email:</h5> <a id="email"></a>
+                </span><br><br>
+                <span>
+                    <h5>Status:</h5><a id="status"></a>
+                </span><br><br>
+               
+                
+            </div>
+            
+          <div class="col flex-row align-top mx-auto border bg-form bg-mod border-primary">
+            <form id="update" class="px-4 py-3" action="http://localhost:8080/projectone/update", method="POST">
+              <h2 class="col-sm-11 mx-auto text-capitalize">Account Updates</h2>
+              <div class="dropdown-divider"></div>
+              <div class="form-group">
+                <label for="employee-email">Email address</label>
+                <input name="updateEmail" type="email" class="form-control" autocomplete="off" placeholder="email@example.com">
+              </div>
+              <div class="form-group">
+                <label for="employee-password">Password</label>
+                <input name="updatePassword" type="text" class="form-control" autocomplete="off" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" id="sub-button">
+            </form>
+            <div class="dropdown-divider"></div>
+        </div>
+        
+    </div>
+</body>
+<footer class="bg-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <p>
+                    show the magic
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="dom.js"></script>
+    </footer>
+</html>

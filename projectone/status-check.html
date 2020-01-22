@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ProByte</title>
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class=" hpage w3-container">
+    <nav class="navbar sticky-top  navbar-expand-md bg-mod navbar-dark">
+        <a class="navbar-brand" href="employee-hpage.html"> ProByte</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link " data-toggle="nav-pills" href="employee-hpage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="nav-pills" id="check-stats"  href="status-check.html">Check Status</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="nav-pills" href="employee-rform.html">Reimbursement Requests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-toggle="nav-pills" href="employee-update.html">Update Acount</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-toggle="nav-pills" href="index.html">Logout</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    <header id="homepage" class="jumbotron">
+        <div class="container ">
+            <div class="row">
+                <div class="header-color col-sm-3 ">
+                    <h1>
+                        Probyte
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 float-left text-sm-left bg-home px-4 py-3">
+                <span>
+                    <h5>FirstName: </h5> <a id="f-Name"></a>
+                </span><br><br>
+                <span>
+                    <h5>LastName: </h5> <a id="l-Name"></a>
+                </span><br><br>
+                <span>
+                    <h5>Email:</h5> <a id="email"></a>
+                </span><br><br>
+                <span>
+                    <h5>Status:</h5><a id="status"></a>
+                </span><br><br>
+            </div>
+              
+          <div class="col flex-row align-top mx-auto border bg-form bg-mod border-primary">
+            <h2 class="col-sm-11 mx-auto text-capitalize">Reimbursement Status</h2>
+            <div class="dropdown-divider"></div>
+            <div class="col-10 border-dark "action="http://localhost:8080/projectone/rform" method="POST">
+             <table style="width:100%">
+                 <thead>
+                     <tr>
+                         <th>"ID"</th>
+                         <th>"Request Amount"</th>
+                         <th>"Refund Type"</th>
+                         <th>"Request Date"</th>
+                         <th>"Status"</th>
+                     </tr>
+                 </thead>
+                 <tbody id="user-d">
+                 
+                 
+                 </tbody>
+             </table>
+             
+                </div>
+                <div class="dropdown-divider"></div>
+                <h5>Approve Amount:</h5><p id="totalAmount"></p>
+                <br>
+                <form action="http://localhost:8080/projectone/delete" method="POST">
+                    <div class="row">
+                         <div class=col-4>
+                            <button class="btn btn-danger" id="delete_req" >Delete Requests</button>
+                         </div>
+                         
+                        </div>
+                </form>
+                
+               
+
+            
+        </div>
+    </div>
+</body>
+                  
+<footer class="bg-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <p>
+                    show the magic
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="dom.js"></script>
+
+</html>

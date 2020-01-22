@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ProByte</title>
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class="w3-container">
+	<nav class="navbar sticky-top  navbar-expand-md bg-mod navbar-dark">
+		<a class="navbar-brand" href="index.html"> ProByte</a>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a class="nav-link" data-toggle="nav-pills" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link active" data-toggle="nav-pills" href="managerlogin.html">Manager
+					Login</a></li>
+			<li class="nav-item"><a class="nav-link" data-toggle="nav-pills" href="employeelogin.html">Employee
+					Login</a></li>
+			<li class="nav-item"><a class="nav-link" data-toggle="nav-pills" href="signup.html">Sign Up</a></li>
+		</ul>
+		</div>
+	</nav>
+	<header id="homepage" class="jumbotron">
+		<div class="container ">
+			<div class="row">
+				<div class="header-color col-sm-6">
+					<h1>Probyte</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-md-4 mx-auto bg-mod border border-primary">
+				<form id="login" class="px-4 py-3" action="http://localhost:8080/projectone/mlogin" method="POST">
+					<h2 class="col-sm-10 mx-auto text-capitalize">Manager Login</h2>
+					<div class="dropdown-divider"></div>
+					<div class="form-group">
+						<label for="manager-email">Email address</label>
+						<input name="mEmail" type="email" class="form-control" autocomplete="off"
+							placeholder="email@example.com">
+					</div>
+					<div class="form-group">
+						<label for="manager-password">Password</label>
+						<input name="mPassword" type="password" autocomplete="off" class="form-control"
+							placeholder="Password">
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary">
+				</form>
+				<div class="dropdown-divider"></div>
+				<span class="dropdown-item"> New around here? <a href="signup.html">Sign up</a>
+				</span> <a class="dropdown-item" href="#">Forgot password</a>
+			</div>
+		</div>
+	</main>
+</body>
+<footer class="bg-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-12">
+				<p>show the magic</p>
+			</div>
+		</div>
+	</div>
+
+</html>
